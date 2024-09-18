@@ -1,6 +1,6 @@
-# University Recommendation ChatBot
+# Immigration chatbot
 
-A university recommendation chatbot built using Rasa for Natural Language Understanding (NLU) and Flask for the backend API. This chatbot assists students in finding universities based on various criteria like ranking, location, and tuition fees.
+A immigration chatbot built using Rasa for Natural Language Understanding (NLU) and Flask for the backend API. This chatbot assists students in finding universities based on various criteria like ranking, location, and tuition fees.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ A university recommendation chatbot built using Rasa for Natural Language Unders
 
 ## Overview
 
-This chatbot leverages machine learning to understand user queries and provides university recommendations. The system uses BERT-based models for intent recognition and entity extraction. The backend is implemented using Flask, which handles API requests and integrates the Rasa bot.
+This chatbot leverages machine learning to understand user queries and provides immigration details. The system uses BERT-based models for intent recognition and entity extraction. The backend is implemented using Flask, which handles API requests and integrates the Rasa bot.
 
 ## Features
 
@@ -31,27 +31,6 @@ This chatbot leverages machine learning to understand user queries and provides 
 - Python 3.8+
 - pip (Python package installer)
 - Virtual environment (optional but recommended)
-
-### Steps
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/UniversityRecommendationChatBot.git
-   cd UniversityRecommendationChatBot
-
-Commands
-python3 -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-
-pip install -r requirements.txt
-
-rasa train
-
-rasa run --enable-api
-
-rasa run actions
-
-rasa run
 
 
 
