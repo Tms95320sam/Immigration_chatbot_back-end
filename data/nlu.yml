@@ -1,0 +1,75 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello!
+    - Hi there!
+    - Good morning
+    - Hey
+    - Greetings
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - See you later
+    - Bye
+    - Have a nice day
+    - Take care
+
+- intent: bot_challenge
+  examples: |
+    - Are you real?
+    - Are you a bot?
+    - Are you a robot?
+    - Is this an AI?
+    - Am I talking to a machine?
+
+- intent: university_full_detail_request
+  examples: |
+    - Tell me more about [University of Cambridge](university_name)
+    - I want details on [University of Oxford](university_name)
+    - What can you tell me about [Imperial College London](university_name)?
+    - Give me information on [London School of Economics](university_name)
+
+- intent: ask_minimum_ielts_score
+  examples: |
+    - What is the minimum IELTS score required?
+    - Tell me the IELTS score needed for admission
+    - What IELTS score do I need?
+    - Minimum IELTS score for [University of Cambridge](university_name)?
+
+- intent: ask_visa_requirements
+  examples: |
+    - What are the visa requirements for [Skilled Worker Visa](visa_type)?
+    - Tell me about the requirements for [Student Visa](visa_type)
+    - What do I need for a [Tier 2 Visa](visa_type)?
+    - Give me the details for [Work Visa](visa_type)
+
+- intent: ask_best_university
+  examples: |
+    - What is the best university in [East of England](region)?
+    - Show me the top university in [London](region)
+    - Which university is best in [Scotland](region)?
+    - Find the best university in [South East](region)
+
+- intent: currentStatus
+  examples: |
+    - How are you?
+    - What’s up?
+    - How are you doing?
+    - What’s your status?
+
+- intent: deny
+  examples: |
+    - No
+    - Not interested
+    - I don't want that
+    - I refuse
+    - Never mind
+  
+regex:
+  - name: university_name
+    pattern: "University of [A-Za-z]+"
+  - name: region
+    pattern: "[A-Za-z]+"

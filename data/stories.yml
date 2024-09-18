@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+- story: Provide university details
+  steps:
+    - intent: university_full_detail_request
+    - action: action_provide_university_details
+
+- story: Current status
+  steps:
+    - intent: currentStatus
+    - action: utter_current_status
+
+- story: Bot challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- story: Provide minimum IELTS score
+  steps:
+    - intent: ask_minimum_ielts_score
+    - action: action_provide_minimum_ielts_score
+
+- story: Ask visa requirements
+  steps:
+    - intent: ask_visa_requirements
+    - action: action_provide_visa_requirements
+
+- story: Ask for best university
+  steps:
+    - intent: ask_best_university
+    - action: action_provide_best_university
